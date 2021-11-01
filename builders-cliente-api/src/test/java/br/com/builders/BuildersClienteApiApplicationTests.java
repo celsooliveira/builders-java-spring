@@ -115,7 +115,7 @@ class BuildersClienteApiApplicationTests {
 		setUp();
 		try {
 			MockHttpServletResponse response = mockMvc.perform(
-                 get("/clientes?page=0&size=4").accept(MediaType.APPLICATION_JSON)
+                 get("/clientes?page=0&size=10").accept(MediaType.APPLICATION_JSON)
              )
              .andReturn()
              .getResponse();
